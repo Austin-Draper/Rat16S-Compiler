@@ -1,0 +1,84 @@
+
+Token: Seperator      Lexeme: $$        
+<Opt Function Definitions> ::= <Empty>
+<Empty> ::= epsilon
+
+Token: Seperator      Lexeme: $$        
+
+<OptDeclarationList> ::= <DeclarationList>
+
+<DeclarationList> ::= <Declaration>;<DeclarationList>
+<Declaration> ::= <Qualifier> <IDs>
+
+<Qualifier> ::= integer
+
+
+Token: Keyword        Lexeme: integer   
+
+Token: Identifier     Lexeme: low       
+<IDs> ::= <Identifier>
+<IDs> ::= <Identifier>, <IDs>
+
+Token: Seperator      Lexeme: ,         
+
+Token: Identifier     Lexeme: high      
+<IDs> ::= <Identifier>
+<IDs> ::= <Identifier>, <IDs>
+
+Token: Seperator      Lexeme: ,         
+
+Token: Identifier     Lexeme: step      
+<IDs> ::= <Identifier>
+
+Token: Seperator      Lexeme: ;         
+
+Token: Seperator      Lexeme: $$        
+<Statement List> ::= <Statement> <Statement List>
+<Statement> ::= <If>
+<If> ::= if ( <Condition> ) <Statement> endif
+
+Token: Keyword        Lexeme: if        
+
+Token: Seperator      Lexeme: (         
+<Condition> :== <Expression> <Relop> <Expression>
+<Expression> ::= <Term><ExpressionPrime>
+<Term> ::= <Factor><TermPrime>
+<Factor> ::= <Primary>
+
+Token: Identifier     Lexeme: low       
+<Primary> ::= <identifier>
+<TermPrime> ::= epsilon
+<ExpressionPrime> ::= epsilon
+
+Token: Operator       Lexeme: <         
+<Relop> ::= <
+<Expression> ::= <Term><ExpressionPrime>
+<Term> ::= <Factor><TermPrime>
+<Factor> ::= <Primary>
+
+Token: Identifier     Lexeme: high      
+<Primary> ::= <identifier>
+<TermPrime> ::= epsilon
+<ExpressionPrime> ::= epsilon
+
+Token: Seperator      Lexeme: )         
+
+Token: Identifier     Lexeme: low       
+<Statement> ::= <Assign>
+
+Token: Identifier     Lexeme: low       
+<Assign> ::= <Identifier> := <Expression>;
+
+Token: Operator       Lexeme: :=        
+<Expression> ::= <Term><ExpressionPrime>
+<Term> ::= <Factor><TermPrime>
+<Factor> ::= <Primary>
+
+Token: Identifier     Lexeme: step      
+<Primary> ::= <identifier>
+<TermPrime> ::= epsilon
+<ExpressionPrime> ::= epsilon
+
+Token: Seperator      Lexeme: ;         
+
+Token: Keyword        Lexeme: endif     

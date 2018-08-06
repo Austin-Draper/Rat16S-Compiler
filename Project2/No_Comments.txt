@@ -1,0 +1,9 @@
+
+$$
+     integer   low, high, step;   
+
+$$
+     if (low < high)  
+         low := step;
+	endif
+$$
