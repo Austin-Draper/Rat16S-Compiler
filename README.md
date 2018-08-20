@@ -1,19 +1,19 @@
 # Rat16S-Compiler
 THIS PROGRAM WAS UPLOADED TO GITHUB USING VISUAL STUDIO 2015 COMMUNITY EDITION
 
-## I. 
+### I. 
 This program is based on a language called "Rat16S" which is descibed in detail in section III. The Rat16S language is designed to be easy to understand. It has a short grammar and relatively clean semantics. 
 
 
 
-## II. 
+### II. 
 To run this program, you must have visual studio installed. In the repository, select the clone or download button and choose the "Download ZIP" option. Open the containing folder and open Project2.sln. From here you can now access the code and run the program. If you want to test the compiler yourself, open "text.txt" and alter the code however you would like.   
 
 If you don't have visual studio or this method is giving you problems, there is an alternative. Simply navigate to the project2 folder and run Project2.exe. This will execute and run the program perfectly. From here you can still open "text.txt" and alter the code without the use of visual studio. After altering the code, run Project2.exe again and it will run your newly changed code. 
 
 
 
-## III. 
+### III. 
 ### 1) Lexical Conventions: 
 	
 The lexical units of a program are identifiers, keywords, integers, reals, operators, and other separators (total of 6 types of tokens). 
