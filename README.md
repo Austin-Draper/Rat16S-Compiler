@@ -84,20 +84,20 @@ No arithmetic operations are allowed with booleans.
 [* This is a comment. This sample code converts 
    Fahrenheit into Celcius *]
 
-function convert (fahr:integer)
-{
-	return 5*(fahr-32)/9;
-}
+function convert (fahr:integer)  
+{  
+	return 5*(fahr-32)/9;  
+}  
 
-$$
-	integer low, high, step; [* declarations *]
+$$  
+	integer low, high, step; [* declarations *]  
 	
-$$
-	scanf (low, high, step);
-	while (low < high)
-	{
-		printf (low);
-		Printf (convert (low));
-		low := low + step;
-	}
-$$
+$$  
+	scanf (low, high, step);  
+	while (low < high)  
+	{  
+		printf (low);  
+		Printf (convert (low));  
+		low := low + step;  
+	}  
+$$  
