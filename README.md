@@ -1,19 +1,15 @@
 # Rat16S-Compiler
-
-1. explain compiler a little. 2. explain how to run it. 3. then explain in great detail
-at end of 1, explain that an in depth description is in section 3 (III).
-Section 2 just explains how to start the program. Use regular methods or just use the .exe (check of .exe works if change the text file... it should)
-
 THIS PROGRAM WAS UPLOADED TO GITHUB USING VISUAL STUDIO 2015 COMMUNITY EDITION
 
 I. This program is based on a language called "Rat16S" which is descibed in detail in section III. The Rat16S language is designed to be easy to understand. It has a short grammar and relatively clean semantics. 
 
 
 
+II. To run this program, you must have visual studio installed. In the repository, select the clone or download button and choose the "Download ZIP" option. Open the containing folder and open Project2.sln. From here you can now access the code and run the program. If you want to test the compiler yourself, open "text.txt" and alter the code however you would like.   
 
-II. To run this program, (test at home but it should just be to download as a .zip, unzip it, put it with other visual studio programs, then you can work with it from there.
-Other option is just to do the same thing with downloading the .zip but instead of using visual studio just give directions to the .exe file.
-assuming the .exe works, give directions to the text file being changed by the .exe file and explain to the user they can change it to their needs.
+If you don't have visual studio or this method is giving you problems, there is an alternative. Simply navigate to the project2 folder and run Project2.exe. This will execute and run the program perfectly. From here you can still open "text.txt" and alter the code without the use of visual studio. After altering the code, run Project2.exe again and it will run your newly changed code. 
+
+
 
 III. 
 1) Lexical Conventions: 
@@ -28,6 +24,7 @@ Upper and lower cases are read the same.
 <Real> is an integer followed by "." and integer such as "123.0" or "." followed by an integer such as ".123".
 Some identifiers are reserved for use as keywords, and may not be used otherwise. Some of these identifiers are: integer, if, else, endif, while, return, scanf, etc...
 Comments are enclosed in [*          *]
+
 
 2) Syntax Rules
 
@@ -70,10 +67,35 @@ R29. <Empty> ::= COPY PASTE AN EPSILON HERE
 
 3) Some Semantics
 
+Rat16S is a conventional imperative programming language. A Rat16S program consists of a sequence of functions followed by the "main body" where the program executes.
+All variables and functions must be declared before use.
+Function arguments are passed by value.
+There is an implied expressionless return at the end of all functions; the value returned by expressionless return statement is undefined.
+Arithmetic expressions have their conventional meanings.
+Integer division ignores any remainder.
+Type casting is not allowed.
+No arithmetic operations are allowed with booleans.
+
 
 4) A Sample Rat16S Program
 
 [* This is a comment. This sample code converts 
    Fahrenheit into Celcius *]
 
-function convert 
+function convert (fahr:integer)
+{
+	return 5*(fahr-32)/9;
+}
+
+$$
+	integer low, high, step; [* declarations *]
+	
+$$
+	scanf (low, high, step);
+	while (low < high)
+	{
+		printf (low);
+		Printf (convert (low));
+		low := low + step;
+	}
+$$
