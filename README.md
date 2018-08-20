@@ -64,7 +64,7 @@ R25. \<Expression> ::= \<Expression> + \<Term> | \<Expression> - \<Term> | \<Ter
 R26. \<Term> ::= \<Term> * \<Factor> | \<Term> / \<Factor> | \<Factor>  
 R27. \<Factor> ::= - \<Primary> | \<Primary>  
 R28. \<Primary> ::= \<Identifier> | \<Integer> | \<Identifier> \( \<IDs> ) | \( \<Expression> ) | \<Real> | true | false  
-R29. \<Empty> ::= COPY PASTE AN EPSILON HERE 
+R29. \<Empty> ::= ɛ
 
 
 ### 3) Some Semantics
