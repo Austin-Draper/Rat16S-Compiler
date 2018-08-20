@@ -1,18 +1,20 @@
 # Rat16S-Compiler
 THIS PROGRAM WAS UPLOADED TO GITHUB USING VISUAL STUDIO 2015 COMMUNITY EDITION
 
-I. This program is based on a language called "Rat16S" which is descibed in detail in section III. The Rat16S language is designed to be easy to understand. It has a short grammar and relatively clean semantics. 
+## I. 
+This program is based on a language called "Rat16S" which is descibed in detail in section III. The Rat16S language is designed to be easy to understand. It has a short grammar and relatively clean semantics. 
 
 
 
-II. To run this program, you must have visual studio installed. In the repository, select the clone or download button and choose the "Download ZIP" option. Open the containing folder and open Project2.sln. From here you can now access the code and run the program. If you want to test the compiler yourself, open "text.txt" and alter the code however you would like.   
+## II. 
+To run this program, you must have visual studio installed. In the repository, select the clone or download button and choose the "Download ZIP" option. Open the containing folder and open Project2.sln. From here you can now access the code and run the program. If you want to test the compiler yourself, open "text.txt" and alter the code however you would like.   
 
 If you don't have visual studio or this method is giving you problems, there is an alternative. Simply navigate to the project2 folder and run Project2.exe. This will execute and run the program perfectly. From here you can still open "text.txt" and alter the code without the use of visual studio. After altering the code, run Project2.exe again and it will run your newly changed code. 
 
 
 
-III. 
-1) Lexical Conventions: 
+## III. 
+### 1) Lexical Conventions: 
 	
 The lexical units of a program are identifiers, keywords, integers, reals, operators, and other separators (total of 6 types of tokens). 
 Blanks, tabs and newlines (collectively, "white space") as described below are ignored except as they serve to separate tokens. 
@@ -26,7 +28,7 @@ Some identifiers are reserved for use as keywords, and may not be used otherwise
 Comments are enclosed in [*          *]
 
 
-2) Syntax Rules
+### 2) Syntax Rules
 
 The following BNF describes the Rat16S as a set of rules.
 For reference, Opt = optional and $$ = separator
@@ -65,7 +67,7 @@ R28. <Primary> ::= <Identifier> | <Integer> | <Identifier> ( <IDs> ) | ( <Expres
 R29. <Empty> ::= COPY PASTE AN EPSILON HERE 
 
 
-3) Some Semantics
+### 3) Some Semantics
 
 Rat16S is a conventional imperative programming language. A Rat16S program consists of a sequence of functions followed by the "main body" where the program executes.
 All variables and functions must be declared before use.
@@ -77,7 +79,7 @@ Type casting is not allowed.
 No arithmetic operations are allowed with booleans.
 
 
-4) A Sample Rat16S Program
+### 4) A Sample Rat16S Program
 
 [* This is a comment. This sample code converts 
    Fahrenheit into Celcius *]
