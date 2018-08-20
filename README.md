@@ -33,10 +33,10 @@ Comments are enclosed in [*          *]
 The following BNF describes the Rat16S as a set of rules.
 For reference, Opt = optional and $$ = separator
 
-R1. <Rat16S> ::= <Opt Function Definitions>
-              $$ <Opt Declaration List>
-              $$ <Statement List>
-              $$
+R1. <Rat16S> ::= \<Opt Function Definitions>  
+              $$ \<Opt Declaration List>  
+              $$ \<Statement List>  
+              $$  
 R2. <Opt Function Definitions> ::= <Function Definitions> | <Empty>
 R3. <Function Definitions> ::= <Function> | <Function> <Function Definitions>
 R4. <Function> ::= function <Identifier> ( <Opt Parameter List> ) <Opt Declaration List> <Body>
