@@ -69,14 +69,14 @@ R29. \<Empty> ::= ɛ
 
 ### 3) Some Semantics
 
-Rat16S is a conventional imperative programming language. A Rat16S program consists of a sequence of functions followed by the "main body" where the program executes.
-All variables and functions must be declared before use.
-Function arguments are passed by value.
-There is an implied expressionless return at the end of all functions; the value returned by expressionless return statement is undefined.
-Arithmetic expressions have their conventional meanings.
-Integer division ignores any remainder.
-Type casting is not allowed.
-No arithmetic operations are allowed with booleans.
+Rat16S is a conventional imperative programming language. A Rat16S program consists of a sequence of functions followed by the "main body" where the program executes.  
+All variables and functions must be declared before use.  
+Function arguments are passed by value.  
+There is an implied expressionless return at the end of all functions; the value returned by expressionless return statement is undefined.  
+Arithmetic expressions have their conventional meanings.  
+Integer division ignores any remainder.  
+Type casting is not allowed.  
+No arithmetic operations are allowed with booleans.  
 
 
 ### 4) A Sample Rat16S Program
